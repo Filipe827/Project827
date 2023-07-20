@@ -51,7 +51,7 @@ class test {
         System.out.println(" ");
 
         //Spindler test case 1: Does need service
-        LocalDate lastServiceDate2 = LocalDate.of(2021, 7, 20);
+        LocalDate lastServiceDate2 = LocalDate.of(2019, 7, 20);
         Battery spindlerBattery = new spindlerBattery(lastServiceDate2);
         System.out.println("Does this Spindler Battery need service?(True): " + spindlerBattery.needs_service());
 
