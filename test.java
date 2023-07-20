@@ -61,5 +61,27 @@ class test {
         Battery spindlerBattery1 = new spindlerBattery(lastServiceDate3);
         System.out.println("Does this Spindler Battery need service?(False): " + spindlerBattery1.needs_service());
         System.out.println(" ");
+
+        //Carrigan test case 1: Does need service
+        double[] tireWear = {0.2, 0.5, 0.1, 0.9};
+        Tire carriganTire = new carriganTire(tireWear);
+        System.out.println("Does this Carrigan Tire need service?(True): " + carriganTire.needs_service());
+
+        //Carrigan test case 2: Doesn't need service
+        double[] tireWear1 = {0.2, 0.5, 0.1, 0.4};
+        Tire carriganTire1 = new carriganTire(tireWear1);
+        System.out.println("Does this Carrigan Tire need service?(False): " + carriganTire1.needs_service());
+        System.out.println(" ");
+
+        //Octoprime test case 1: Does need service
+        double[] tireWear2 = {0.9, 0.9, 0.8, 0.7};
+        Tire octoTire = new octoprimeTire(tireWear2);
+        System.out.println("Does this Octoprime Tire need service?(True): " + octoTire.needs_service());
+
+        //Octoprime test case 2: Doesn't need service
+        double[] tireWear3 = {0.5, 0.4, 0.3, 0.3};
+        Tire octoTire1 = new octoprimeTire(tireWear3);
+        System.out.println("Does this Octoprime Tire need service?(False): " + octoTire1.needs_service());
+        System.out.println(" ");
     }
 }
