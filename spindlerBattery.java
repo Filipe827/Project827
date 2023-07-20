@@ -15,7 +15,7 @@ public class spindlerBattery extends Battery {
 
         long yearsSinceLastService = ChronoUnit.YEARS.between(lastServiceDate, currentDate);
 
-        return yearsSinceLastService >= 2;
+        return yearsSinceLastService >= 3;
     }
 
     public static void main(String[] args) {
